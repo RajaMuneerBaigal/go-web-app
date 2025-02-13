@@ -22,6 +22,9 @@ jobs:
 
             - name: build
               run: go build -o go-web-app
+
+            - name: test
+              run: go test ./...
              
             
   
