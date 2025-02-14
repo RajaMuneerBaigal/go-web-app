@@ -50,6 +50,14 @@ jobs:
           with:
               username: ${{ vars.DOCKERHUBUSERNAME}}
               password: ${{ secrets.DOCKERHUBPASSWORD }}
+        - name: Build and Push action
+          uses: docker/build-push-action@v6
+          with:
+                context: .
+                file: ./Dockerfile
+                push: true
+                tags: ${{ secrets.DOCKERHUBUSERNAME }}/go-web-app:${{github.run_id}}
+        
 
 
 
