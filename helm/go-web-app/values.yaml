@@ -8,5 +8,5 @@ image:
   repository: rajamuneer/go-web-app
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
-  tag: "13325396329"
+  tag: "13325420494"
 
